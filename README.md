@@ -6,6 +6,16 @@ Forum (for questions/discussion): https://metafetish.club ([Estim
 Specific Category Here](https://metafetish.club/c/estim), but may not
 include all estim messages)
 
+## Parts ordering information
+
+See the Documentation link above for BOMs.
+
+Prebuilt Mouser cart for electronic components of the v1.3R board:
+https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=a2725b2f11
+
+You will still need screws/standoffs/cases etc, which can be sourced
+elsewhere as listed in the spreadsheet.
+
 ## Board ordering instructions
 
 Preferred board house is https://jlcpcb.com
