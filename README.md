@@ -47,8 +47,7 @@ setting. See below.
    - Main Boards: 2
    - Front Panel: 1
 - Remarks:
-   - Main Boards: V Score the Main Boards panel as indicated.
-   - Front Panel: Place all Fab Markings (Serial Numbers/Date Codes) on the BOTTOM side of the front panel board.
+   - Front Panel: Place all Fab Markings (Serial Numbers/Date Codes) on the BOTTOM side of the front panel board or set options to no Serial / no Markings
    
 ## Board Assembly Instructions - IMPORTANT
 
