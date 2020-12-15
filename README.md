@@ -2,7 +2,7 @@
 
 All Credits go to [qdot](https://github.com/qdot)! I'm just streamlining the project documentation here a bit for myself.
 
-Documentation at : http://tinyurl.com/mk312bt-info
+Documentation at : [Readme](https://github.com/gardens-git/mk312-bt/blob/master/boms/MK-312BT_1.3R.xlsx)
 
 Forum (for questions/discussion): https://metafetish.club ([Estim
 Specific Category Here](https://metafetish.club/c/estim), but may not
@@ -13,9 +13,10 @@ include all estim messages)
 See the Documentation link above for BOMs.
 
 Prebuilt Mouser cart for electronic components of the v1.3R board:
-https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=a2725b2f11
+http://tinyurl.com/mm63csz
 
-You will still need screws/standoffs/cases etc, which can be sourced
+
+You will still need screws/standoffs etc, which can be sourced
 elsewhere as listed in the spreadsheet.
 
 ## Board ordering instructions
