@@ -33,7 +33,11 @@ setting. See below.
 
 - 2 Layer PCB and Dimensions should be detected when you upload the
   zip with the gerbers
+
 - Quantity: No requirement, choose whatever you like
+- Different Design 
+   - Main Boards: 2
+   - Front Panel: 1
 - Thickness: 1.6
 - PCB Color:
    - Main Boards: No requirement, choose whatever you like
@@ -41,12 +45,8 @@ setting. See below.
 - Surface finish: HASL
 - Copper weight: 1oz
 - Gold fingers: No
-- Material: Standard FR4
-- Panel by jlcpcb: No
-- Different Design 
-   - Main Boards: 2
-   - Front Panel: 1
-- Remarks:
+
+- Remove Order Number:
    - Front Panel: Place all Fab Markings (Serial Numbers/Date Codes) on the BOTTOM side of the front panel board or set options to no Serial / no Markings
    
 ## Board Assembly Instructions - IMPORTANT
