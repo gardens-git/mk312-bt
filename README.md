@@ -1,6 +1,6 @@
 # MK-312BT V1.3R
 
-All Credits go to qdot! I'm just streamlining the project here a bit for myself.
+All Credits go to [qdot](https://github.com/qdot)! I'm just streamlining the project here a bit for myself.
 
 Documentation at : http://tinyurl.com/mk312bt-info
 
@@ -136,7 +136,7 @@ AT+IPSCAN=1024,1,1024,1
 ```
 
 To do this automatically:
-1. Enshure pin 32 is soldered to the carrier board (See [bluetooth/HC05PINOUT.PNG](https://github.com/buttshock/mk312-bt/blob/master/bluetooth_conf/HC05PINOUT.png) for reference)
+1. Ensure pin 32 is soldered to the carrier board (See [bluetooth/HC05PINOUT.PNG](https://github.com/buttshock/mk312-bt/blob/master/bluetooth_conf/HC05PINOUT.png) for reference)
 2. Flash the included bin file onto the ATMEGA16
 3. Plug the HC-05 bluetooth radio into the board.
 4. Place HC-05 in command mode by holding down the button on the HC-05
