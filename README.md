@@ -2,7 +2,7 @@
 
 All Credits go to [qdot](https://github.com/qdot)! I'm just streamlining the project documentation here a bit for myself.
 
-Documentation at : [Readme](https://github.com/gardens-git/mk312-bt/blob/master/boms/MK-312BT_1.3R.xlsx)
+Documentation: [Readme](https://github.com/gardens-git/mk312-bt/blob/master/boms/MK-312BT_1.3R.xlsx)
 
 Forum (for questions/discussion): https://metafetish.club ([Estim
 Specific Category Here](https://metafetish.club/c/estim), but may not
@@ -13,9 +13,16 @@ include all estim messages)
 See the Documentation link above for BOMs.
 
 Prebuilt Mouser cart for electronic components of the v1.3R board:
-http://tinyurl.com/mm63csz
-
-
+http://tinyurl.com/mm63csz 
+- Needs updates
+  - Ribbon cable to short
+  - more Pins
+  - Jumpers
+  - Res 10K?
+  - Button-Colors?
+  - 
+  
+  
 You will still need screws/standoffs etc, which can be sourced
 elsewhere as listed in the spreadsheet.
 
@@ -37,18 +44,18 @@ setting. See below.
 
 - Quantity: No requirement, choose whatever you like
 - Different Design 
-   - Main Boards: 2
-   - Front Panel: 1
+  - Main Boards: 2
+  - Front Panel: 1
 - Thickness: 1.6
 - PCB Color:
-   - Main Boards: No requirement, choose whatever you like
-   - Front Panel: Black is recommended, but not required. Choose whatever you like otherwise.
+  - Main Boards: No requirement, choose whatever you like
+  - Front Panel: Black is recommended, but not required. Choose whatever you like otherwise.
 - Surface finish: HASL
 - Copper weight: 1oz
 - Gold fingers: No
 
 - Remove Order Number:
-   - Front Panel: Place all Fab Markings (Serial Numbers/Date Codes) on the BOTTOM side of the front panel board or set options to no Serial / no Markings
+  - Front Panel: Place all Fab Markings (Serial Numbers/Date Codes) on the BOTTOM side of the front panel board or set options to no Serial / no Markings
    
 ## Board Assembly Instructions - IMPORTANT
 
