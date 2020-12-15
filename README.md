@@ -1,4 +1,6 @@
-# MK-312BT V1.3
+# MK-312BT V1.3R
+
+All Credits go to qdot! I'm just streamlining the project here a bit for myself.
 
 Documentation at : http://tinyurl.com/mk312bt-info
 
@@ -63,13 +65,7 @@ setting. See below.
 5. Make sure Pin 32 (LED2) on the HC-05 module is actually soldered
    and making connection to the ZS-040 break out board or "Radio" LED
    may not function on the front panel
-6. Be very careful not to bridge pins when soldering the LM 2941
-   (U14). Apply heat to 1 pad only and carefully apply solder. If a
-   bridge occurs - remove the IC, clean the pads throughly with flux
-   and solder wick and then retry. Pins 2 and 3 can be bridged because
-   they are both ground. Ensure that no other pins are bridged. Check
-   with multimeter continuity tester for bridges before power on!
-7. Make sure to check the orientation of all electrolytic caps. (+)
+6. Make sure to check the orientation of all electrolytic caps. (+)
    indicates the positive and a solid white "|" indicates the negative.
 8. **MAKE SURE YOUR POWER PLUG IS CENTER POSITIVE OR THINGS WILL GO
    BADLY.** If you fuck up and plug in a reversed polarity supply -
@@ -80,18 +76,10 @@ setting. See below.
 10. Place transformers with P facing the output jacks (yes we are
     using the transformers "backwards" if you follow orientation given
     in the transformer datasheet )
-11. Trim pins of 4066 IC (U3) Socket on the front panel board flush
-    before soldering so buttons can clear. If the buttons still
-    interfere, carefully disassemble the button and cut off the bit of
-    the plastic housing that interferes with the 4066 IC socket pins.
-12. Using side cutters cut off the screw boss/screw mount on the case
+11. Use a Chisel to cut off the screw boss/screw mount on the case
     that touches/interferes with the ribbon cable socket on the
     display board.
-13. The LCD display has metal retention tabs that may short the
-    soldered leads of C43. When installing the display board ensure
-    that this does not happen (shorten the capacitor leads and bend
-    the offending metal tab out of the way if necessary
-14. If Error 20 is encountered on first boot:
+12. If Error 20 is encountered on first boot:
    - Check that all FETs and Transformers are turned in the correct direction
    - Check that resistors R35 and R46 are the correct 200k values
    - [See this thread on the message board](https://metafetish.club/t/mk-312bt-failure-20/)
@@ -121,38 +109,6 @@ setting. See below.
    startup. If the byte is inaccurate various problems and failures
    will occur related to timing, interrupts, and serial communication.
    Just use an external crystal dammit.
-
-## MK312-BT Original Fab Notes
-
-(These are the old fab notes from the repo, mostly kept here for
-history sake. Ordering instructions above cover most of this.)
-
-### Main Boards
-
-1. V Score the Main Boards panel as indicated.
-2. Main Boards has 2 board designs panelized on 1 panel.
-3. Thickness is standard 1.6mm (0.063inches)
-4. Board is 2 layers
-5. HASL Finish - Pb Free Preferred if possible, otherwise Pb HASL is OK
-6. 1oz copper
-7. FR4 material
-8. Main Boards : Green solder mask, White Silkscreen (silkscreen BOTH top and bottom sides)
-9. ITAR : NO
-10. IPC-A-610 - Class2 (If possible - otherwise ignore)
-11. Main Board Dimensions : (193.04mm x 104.14mm) or (7.600 inches x 4.100 inches) 
-
-### Front Panel Boards
-
-1. Place all Fab Markings (Serial Numbers/Date Codes) on the BOTTOM side of the front panel board. 
-2. Thickness is standard 1.6mm (0.063inches)
-3. Board is 2 layers
-4. HASL Finish - Pb Free Preferred if possible, otherwise Pb HASL is OK
-5. 1oz copper
-6. FR4 material
-7. Front Panel Boards : Black Solder Mask, While Silkscreen
-8. ITAR : NO
-9. IPC-A-610 - Class2 (If possible - otherwise ignore)
-10. Front Panel Board Dimensions :  (196.85mm x 58.72mm) or (7.750inches x 2.312inches) 
 
 ## Bluetooth Serial Configuration
 
