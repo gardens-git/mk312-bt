@@ -60,7 +60,7 @@ setting. See below.
 ## 3D Printable Case
 
 STL files for a 3D printable case for the MK312 are available in the
-case/ directory.
+[case/](https://github.com/gardens-git/mk312-bt/tree/master/case) directory.
 
 ## Board Assembly Instructions - IMPORTANT
 
