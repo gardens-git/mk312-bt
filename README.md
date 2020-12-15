@@ -1,6 +1,6 @@
 # MK-312BT V1.3R
 
-All Credits go to [qdot](https://github.com/qdot)! I'm just streamlining the project here a bit for myself.
+All Credits go to [qdot](https://github.com/qdot)! I'm just streamlining the project documentation here a bit for myself.
 
 Documentation at : http://tinyurl.com/mk312bt-info
 
