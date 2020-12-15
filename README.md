@@ -89,7 +89,7 @@ setting. See below.
 
 - Use a Chisel to cut off the screw boss/screw mount on the case
   that touches/interferes with the ribbon cable socket on the
-  display board.
+  Front Panel.
 
 ### Trouble-shooting
 
