@@ -56,7 +56,12 @@ setting. See below.
 
 - Remove Order Number:
   - Front Panel: Place all Fab Markings (Serial Numbers/Date Codes) on the BOTTOM side of the front panel board or set options to no Serial / no Markings
-   
+
+## 3D Printable Case
+
+STL files for a 3D printable case for the MK312 are available in the
+case/ directory.
+
 ## Board Assembly Instructions - IMPORTANT
 
 ### Front Panel
@@ -102,18 +107,6 @@ setting. See below.
   - Check that resistors R35 and R46 are the correct 200k values
   - [See this thread on the message board](https://metafetish.club/t/mk-312bt-failure-20/)
 
-## MK312-BT Firmware
-
-1. We are using an external 8mhz crystal instead of the internal RC
-   oscillator that the original uses. We need to set the fuses to
-   enable this. 
-   - LOW FUSE: 0xFF 
-   - HIGH FUSE: 0xDC
-2. A patched version of buttshock-et312-frankenbutt-f005 is
-   recommended.
-3. Obtain or modify a copy of the firmware and flash the result onto
-   the AVR.
-
 ## Bluetooth Serial Configuration
 
 Refer to
@@ -155,12 +148,15 @@ To do this automatically:
    value for 8 MHz R/C position is copied to &H3FFF of bin location or
    use external 8 MHz crystal with appropriate fuse bits set (FFS use
    the external crystal)
+   
+## Firmware
 
-## 3D Printable Case
-
-STL files for a 3D printable case for the MK312 are available in the
-case/ directory. For hardware, this case requires:
-
-- 4 M2.5x20 screws
-- up to 3 M2.5x5 screws
-- some dampening for the battery (double sided foam tape may work)
+1. We are using an external 8mhz crystal instead of the internal RC
+   oscillator that the original uses. We need to set the fuses to
+   enable this. 
+   - LOW FUSE: 0xFF 
+   - HIGH FUSE: 0xDC
+2. A patched version of buttshock-et312-frankenbutt-f005 is
+   recommended.
+3. Obtain or modify a copy of the firmware and flash the result onto
+   the AVR.
