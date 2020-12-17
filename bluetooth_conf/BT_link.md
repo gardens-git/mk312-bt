@@ -28,5 +28,5 @@ AT+ADDR? // check the adress, we will need it for the master, will lock like xxx
 ```
 AT+ROLE=1 // Set module to Bluetooth master mode
 AT+CMODE=0 // This will set the connect mode to “fixed address” 
-AT+BIND=xxxx,yy,zzzzzz // This will set the fixed address from the slave  (be shure to use , not : here)
+AT+BIND=xxxx,yy,zzzzzz // This will set the fixed address from the slave  (be sure to use , not : here)
 ```
