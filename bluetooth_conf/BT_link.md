@@ -6,7 +6,7 @@ Haven't tried it, playing ideas in my head.
 
 ## Overall config
 
-(see normal BT-conf)
+(see normal BT-conf, same for master and slave, maybe change to different names)
 
 ```
 AT // Test communication
@@ -18,12 +18,13 @@ AT+IPSCAN=1024,1,1024,1
 ```
 
 ## Slave config
-
-´´´
-AT+ROLE?
-
-
-
-AT+ADDR?
-
+```
+AT+ROLE? // check the role, must be "0"
+AT+ADDR? // check the adress, we will need it for the master, will lock like xxxx:yy:zzzzzz
+```
+## Master config
+```
+AT+ROLE=1 // Set module to Bluetooth master mode
+AT+CMODE=0 // This will set the connect mode to “fixed address” 
+AT+BIND=xxxx,yy,zzzzzz // This will set the fixed address from the slave  (be shure to use , not : here)
 ```
