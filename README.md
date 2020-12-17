@@ -127,10 +127,9 @@ To do this automatically:
 
 1. We are using an external 8mhz crystal instead of the internal RC
    oscillator that the original uses. We need to set the fuses to
-   enable this. 
+   enable this: 
    - LOW FUSE: 0xFF 
    - HIGH FUSE: 0xDC
-2. A patched version of buttshock-et312-frankenbutt-f005 is
-   recommended.
 3. Obtain or modify a copy of the firmware and flash the result onto
-   the AVR.
+   the AVR (A patched version of buttshock-et312-frankenbutt-f005 is
+   recommended).
