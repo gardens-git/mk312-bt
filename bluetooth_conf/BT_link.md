@@ -8,7 +8,7 @@ Haven't tried it, playing ideas in my head.
 
 ## Overall config
 
-(see normal BT-conf, same for master and slave, maybe change to different names)
+(see normal BT-conf, same for master and slave, maybe change to different names and different password)
 
 ```
 AT // Test communication
