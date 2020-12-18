@@ -4,7 +4,7 @@ It shouldn't be a problem to use the HC-05 Bluetooth modules to link two Boxes.
 
 At the end we will get one box exactly "normal", waiting for BT connections for remote commands and one trying to connect to the other from start up. The paring on the firmware level shoud work from both boxes.
 
-Haven't tried it, playing ideas in my head.
+// Haven't tried it, playing ideas in my head.
 
 ## Overall config
 
