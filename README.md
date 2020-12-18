@@ -2,7 +2,7 @@
 
 All Credits go to [qdot](https://github.com/qdot)! I'm just streamlining the project documentation here a bit for myself.
 
-Documentation at : http://tinyurl.com/mk312bt-info
+Documentation: [Readme](https://github.com/gardens-git/mk312-bt/blob/master/boms/MK-312BT_1.3R.xlsx)
 
 Forum (for questions/discussion): https://metafetish.club ([Estim
 Specific Category Here](https://metafetish.club/c/estim), but may not
@@ -13,9 +13,17 @@ include all estim messages)
 See the Documentation link above for BOMs.
 
 Prebuilt Mouser cart for electronic components of the v1.3R board:
-https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=a2725b2f11
-
-You will still need screws/standoffs/cases etc, which can be sourced
+http://tinyurl.com/mm63csz 
+- Needs updates
+  - Ribbon cable to short
+  - more Pins
+  - Jumpers
+  - Res 10K?
+  - Button-Colors?
+  - 
+  
+  
+You will still need screws/standoffs etc, which can be sourced
 elsewhere as listed in the spreadsheet.
 
 ## Board ordering instructions
@@ -36,19 +44,24 @@ setting. See below.
 
 - Quantity: No requirement, choose whatever you like
 - Different Design 
-   - Main Boards: 2
-   - Front Panel: 1
+  - Main Boards: 2
+  - Front Panel: 1
 - Thickness: 1.6
 - PCB Color:
-   - Main Boards: No requirement, choose whatever you like
-   - Front Panel: Black is recommended, but not required. Choose whatever you like otherwise.
+  - Main Boards: No requirement, choose whatever you like
+  - Front Panel: Black is recommended, but not required. Choose whatever you like otherwise.
 - Surface finish: HASL
 - Copper weight: 1oz
 - Gold fingers: No
 
 - Remove Order Number:
-   - Front Panel: Place all Fab Markings (Serial Numbers/Date Codes) on the BOTTOM side of the front panel board or set options to no Serial / no Markings
-   
+  - Front Panel: Place all Fab Markings (Serial Numbers/Date Codes) on the BOTTOM side of the front panel board or set options to no Serial / no Markings
+
+## 3D Printable Case
+
+STL files for a 3D printable case for the MK312 are available in the
+[case/](https://github.com/gardens-git/mk312-bt/tree/master/case) directory.
+
 ## Board Assembly Instructions - IMPORTANT
 
 ### Front Panel
@@ -81,7 +94,7 @@ setting. See below.
 
 - Use a Chisel to cut off the screw boss/screw mount on the case
   that touches/interferes with the ribbon cable socket on the
-  display board.
+  Front Panel.
 
 ### Trouble-shooting
 
@@ -94,49 +107,11 @@ setting. See below.
   - Check that resistors R35 and R46 are the correct 200k values
   - [See this thread on the message board](https://metafetish.club/t/mk-312bt-failure-20/)
 
-## MK312-BT Firmware
-
-1. We are using an external 8mhz crystal instead of the internal RC
-   oscillator that the original uses. We need to set the fuses to
-   enable this. 
-   - LOW FUSE: 0xFF 
-   - HIGH FUSE: 0xDC
-2. A patched version of buttshock-et312-frankenbutt-f005 is
-   recommended.
-3. Obtain or modify a copy of the firmware and flash the result onto
-   the AVR.
-
 ## Bluetooth Serial Configuration
-
-Refer to
-[https://www.itead.cc/wiki/Serial_Port_Bluetooth_Module_(Master/Slave)_:_HC-05](https://www.itead.cc/wiki/Serial_Port_Bluetooth_Module_(Master/Slave)_:_HC-05)
-for more information.
-
-```
-// Test command to check if we are communicating (expect to receive OK)
-AT
-
-//Name the module
-AT+NAME=MK-312BT 
-
-//Set baud rate to be same as the ATMEGA16
-AT+UART=19200,0,0
-
-//Set the pairing password
-AT+PSWD=1234
-
-//Set the LED Indicator polarity (1 = High Drive 0 = Low Drive)
-AT+POLAR=1,1
-
-// Reduce power consumption by increasing the scan interval. Without
-// this it consumes ~43mA when not connected and causes the 5v regulator
-// to get toasty (but still within operational temp range)
-AT+IPSCAN=1024,1,1024,1 
-```
 
 To do this automatically:
 1. Ensure pin 32 is soldered to the carrier board (See [bluetooth/HC05PINOUT.PNG](https://github.com/buttshock/mk312-bt/blob/master/bluetooth_conf/HC05PINOUT.png) for reference)
-2. Flash the included bin file onto the ATMEGA16
+2. Flash the included [bin file](https://github.com/gardens-git/mk312-bt/tree/master/bluetooth_conf) onto the ATMEGA16
 3. Plug the HC-05 bluetooth radio into the board.
 4. Place HC-05 in command mode by holding down the button on the HC-05
    module, power up MK-312BT and release button after 2 seconds. LEDs
@@ -147,12 +122,14 @@ To do this automatically:
    value for 8 MHz R/C position is copied to &H3FFF of bin location or
    use external 8 MHz crystal with appropriate fuse bits set (FFS use
    the external crystal)
+   
+## Firmware
 
-## 3D Printable Case
-
-STL files for a 3D printable case for the MK312 are available in the
-case/ directory. For hardware, this case requires:
-
-- 4 M2.5x20 screws
-- up to 3 M2.5x5 screws
-- some dampening for the battery (double sided foam tape may work)
+1. We are using an external 8mhz crystal instead of the internal RC
+   oscillator that the original uses. We need to set the fuses to
+   enable this: 
+   - LOW FUSE: 0xFF 
+   - HIGH FUSE: 0xDC
+3. Obtain or modify a copy of the firmware and flash the result onto
+   the AVR (A patched version of buttshock-et312-frankenbutt-f005 is
+   recommended).
