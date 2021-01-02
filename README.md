@@ -89,6 +89,7 @@ STL files for a 3D printable case for the MK312 are available in the
 - Place transformers with P facing the output jacks (yes we are
   using the transformers "backwards" if you follow orientation given
   in the transformer datasheet )
+- U14 is now labeled U5
 
 ### Case
 
